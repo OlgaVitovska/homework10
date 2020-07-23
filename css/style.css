@@ -35,7 +35,7 @@ header p {
   header p {
     font-size: 16px;
     line-height: 20px;
-    margin-top: 10px;
+    margin: 10px 20px;
   }
 }
 
@@ -70,6 +70,11 @@ h4 {
     padding: 0;
   }
 }
+@media (max-width: 1024px) {
+  .block {
+    width: 598px;
+  }
+}
 
 .block-quote {
   font-family: "Roboto", sans-serif;
@@ -95,13 +100,14 @@ h4 {
 }
 @media (max-width: 768px) {
   .container-flex {
-    margin: 42px 70px 0 95px;
+    margin: 20px;
   }
 }
 
 .icon-wrap {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .block:nth-child(3) {
@@ -109,7 +115,7 @@ h4 {
   border-radius: 8px;
 }
 
-.block:nth-child(4) {
+.block:hover {
   box-shadow: 0px 2px 4px rgba(54, 123, 245, 0.24), 0px 4px 8px rgba(54, 123, 245, 0.16);
   border-radius: 8px;
 }
